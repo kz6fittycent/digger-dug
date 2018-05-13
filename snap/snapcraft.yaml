@@ -8,6 +8,7 @@ confinement: strict # use 'strict' once you have the right plugs
 
 apps:
   diggerdug:
+    # dang it snapcraft, find the right executable!!
     command: usr/bin/python diggerdug.py
     plugs:
       - home
