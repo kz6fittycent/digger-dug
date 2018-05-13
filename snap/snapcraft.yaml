@@ -1,0 +1,30 @@
+name: diggerdug # check to see if it's available
+version: '1.0+git' # this is freakin' awesome
+summary: A python script for checking hosts # 79 char long summary
+description: |
+  This simple script runs dig, nmap and netcat in sequence to check a host.
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs
+
+apps:
+  diggerdug:
+    command: diggerdug
+    plugs:
+      - home
+      - network
+     
+parts: 
+  my-part:
+    source: https://github.com/kz6fittycent/digger-dug
+    source-type: git
+    plugin: python
+    python-version: python3
+    
+    build-packages:
+      - python3
+      
+    stage-packages:
+      - python3
+      - netcat
+      - nmap
+      - dig
