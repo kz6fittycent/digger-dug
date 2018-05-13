@@ -8,7 +8,7 @@ confinement: strict # use 'strict' once you have the right plugs
 
 apps:
   diggerdug:
-    command: diggerdug
+    command: diggerdug.py
     plugs:
       - home
       - network
