@@ -27,4 +27,4 @@ parts:
       - python3
       - netcat
       - nmap
-      - bind9utils
+      - dnsutils
