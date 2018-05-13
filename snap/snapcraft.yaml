@@ -9,7 +9,7 @@ confinement: strict # use 'strict' once you have the right plugs
 apps:
   diggerdug:
     # dang it snapcraft, find the right executable!!
-    command: python3 $SNAP/diggerdug.py
+    command: python3 diggerdug.py
     plugs:
       - home
       - network
