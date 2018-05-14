@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import subprocess
 import time
 
@@ -7,7 +9,10 @@ print (50 * '-')
 print ("             WELCOME TO DIGGER-DUG")
 print (50 * '-')
 print (50 * '#')
-time.sleep(2)
+time.sleep(1)
+print ("MIT License, v. 1.0")
+time.sleep(1)
+print()
 
 def main():
     host = str(input("Enter the URL:  "))
