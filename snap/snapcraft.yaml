@@ -1,5 +1,5 @@
 name: diggerdug # check to see if it's available
-version: '1.5' # this is freakin' awesome
+version: '1.6' # this is freakin' awesome
 summary: A python script for checking hosts # 79 char long summary
 description: |
   This simple script runs dig, nmap and netcat in sequence to check a host.
@@ -10,6 +10,8 @@ apps:
   diggerdug:
     # dang it snapcraft, find the right executable!!
     command: python3 $SNAP/bin/diggerdug.py
+    environment: 
+      LD_LIBRARY_PATH: $LD_LIBRARY_PATH:$SNAP/usr/lib/
     plugs:
       - home
       - network
