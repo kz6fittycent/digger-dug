@@ -1,10 +1,10 @@
 name: diggerdug # check to see if it's available
-version: '1.6' # this is freakin' awesome
+version: '1.7' # this is freakin' awesome
 summary: A python script for checking hosts # 79 char long summary
 description: |
   This simple script runs dig, nmap and netcat in sequence to check a host.
 grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs
+confinement: devmode # use 'strict' once you have the right plugs
 
 apps:
   diggerdug:
