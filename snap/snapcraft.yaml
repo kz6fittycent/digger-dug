@@ -1,5 +1,5 @@
 name: diggerdug # check to see if it's available
-version: '1.4' # this is freakin' awesome
+version: '1.5' # this is freakin' awesome
 summary: A python script for checking hosts # 79 char long summary
 description: |
   This simple script runs dig, nmap and netcat in sequence to check a host.
@@ -23,10 +23,13 @@ parts:
     
     build-packages:
       - python3
+      - netcat-traditional
+      - nmap
+      - dnsutils
       
     stage-packages:
       - python3
-      - netcat
+      - netcat-traditional
       - nmap
       - dnsutils
   
