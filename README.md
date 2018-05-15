@@ -1,6 +1,6 @@
 # Digger Dug
 
-A python script for checking hosts
+A python script for checking hosts-- a work in progress.
 
 ## What it does
 
