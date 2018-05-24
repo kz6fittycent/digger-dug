@@ -10,7 +10,7 @@ print ("             WELCOME TO DIGGER-DUG")
 print (50 * '-')
 print (50 * '#')
 time.sleep(1)
-print ("MIT License, v. 1.0")
+print ("MIT License, v. 1.1")
 time.sleep(1)
 print()
 
@@ -41,7 +41,7 @@ def main():
        nmap = input("yes or no?  ").lower()
        if nmap.startswith('y'):
 
-          subprocess.call(['nmap', '-Pn', host])
+          subprocess.call(['$SNAP/usr/bin/nmap', '-Pn', host])
           
        print()
        print("I can also check the host with netcat. Would you like me to run that now?")
@@ -49,7 +49,7 @@ def main():
        if nc.startswith('y'):
       
           port = str(input("Enter the port you need to check:  "))
-          subprocess.call(['netcat', '-v', '-z', '-w 3', host, port])
+          subprocess.call(['$SNAP/usr/bin/ncat', '-v', '-z', '-w 3', host, port])
 
        time.sleep(1)
        print()
